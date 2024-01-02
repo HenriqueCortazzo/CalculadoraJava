@@ -1,5 +1,9 @@
 package br.com.calculator;
 
-public class Operacoes {
+import javax.swing.*;
 
+public class Operacoes {
+void adicao(double a) {
+
+}
 }
