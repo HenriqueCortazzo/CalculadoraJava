@@ -11,6 +11,7 @@ public class Operacoes {
             soma += valoresAOperar[i];
         }
         JOptionPane.showMessageDialog(null, String.format("Resultado da operação: %.1f", soma));
+        calculadora.continuar = JOptionPane.showInputDialog(null, "Deseja continuar?");
     }
 
     void subtracao(double a, Calculadora calculadora) {
@@ -22,6 +23,7 @@ public class Operacoes {
             sub -= valoresAOperar[i];
         }
         JOptionPane.showMessageDialog(null, String.format("Resultado da operação: %.1f", sub));
+        calculadora.continuar = JOptionPane.showInputDialog(null, "Deseja continuar?");
     }
 
     void multiplicacao(double a, Calculadora calculadora) {
@@ -32,6 +34,7 @@ public class Operacoes {
             mult *= valoresAOperar[i];
         }
         JOptionPane.showMessageDialog(null, String.format("Resultado da operação: %.1f", mult));
+        calculadora.continuar = JOptionPane.showInputDialog(null, "Deseja continuar?");
     }
 
     void divisao(double a, Calculadora calculadora) {
@@ -39,8 +42,11 @@ public class Operacoes {
         int newA = (int) a;
         double[] valoresAOperar = calculadora.valores;
         divisao = valoresAOperar[0];
-        for (int i = 1  ; i < valoresAOperar.length; i++) {
+        for (int i = 1; i < valoresAOperar.length; i++) {
             divisao /= valoresAOperar[i];
         }
         JOptionPane.showMessageDialog(null, String.format("Resultado da operação: %.1f", divisao));
-   }}
+        calculadora.continuar = JOptionPane.showInputDialog(null, "Deseja continuar?");
+    }
+
+}

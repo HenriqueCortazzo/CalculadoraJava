@@ -4,9 +4,13 @@ import javax.swing.*;
 
 public class Calculadora {
     double[] valores;
+    String continuar = "";
     double numeroDeValoresConvertido;
 
     void receberDados() {
+        do {
+
+
         String numeroDeValores = JOptionPane.showInputDialog(null, "Com quantos numeros você deseja operar?");
         numeroDeValoresConvertido = Double.parseDouble(numeroDeValores);
         valores = new double[(int) numeroDeValoresConvertido];
@@ -44,6 +48,6 @@ public class Calculadora {
                 Operacoes operar3 = new Operacoes();
                 operar3.divisao(numeroDeValoresConvertido, this);
                 break;
-        }
+        }}while (continuar.equalsIgnoreCase("s")||continuar.equalsIgnoreCase("sim"));
     }
 }
