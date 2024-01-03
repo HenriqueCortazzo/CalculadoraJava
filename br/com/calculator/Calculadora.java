@@ -42,7 +42,7 @@ public class Calculadora {
                 break;
             case 3:
                 Operacoes operar3 = new Operacoes();
-                operar3.multiplicacao(numeroDeValoresConvertido, this);
+                operar3.divisao(numeroDeValoresConvertido, this);
                 break;
         }
     }

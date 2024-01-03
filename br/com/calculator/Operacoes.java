@@ -35,12 +35,12 @@ public class Operacoes {
     }
 
     void divisao(double a, Calculadora calculadora) {
-        double divisao = 1;
+        double divisao;
         int newA = (int) a;
         double[] valoresAOperar = calculadora.valores;
-        for (int i = 0; i < valoresAOperar.length; i++) {
+        divisao = valoresAOperar[0];
+        for (int i = 1  ; i < valoresAOperar.length; i++) {
             divisao /= valoresAOperar[i];
         }
         JOptionPane.showMessageDialog(null, String.format("Resultado da operação: %.1f", divisao));
-    }
-}
+   }}
