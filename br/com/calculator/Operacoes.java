@@ -23,4 +23,14 @@ public class Operacoes {
         }
         JOptionPane.showMessageDialog(null, String.format("Resultado da operação: %.1f", sub));
     }
+
+    void multiplicacao(double a, Calculadora calculadora) {
+        double mult = 1;
+        int newA = (int) a;
+        double[] valoresAOperar = calculadora.valores;
+        for (int i = 0; i < valoresAOperar.length; i++) {
+            mult *= valoresAOperar[i];
+        }
+        JOptionPane.showMessageDialog(null, String.format("Resultado da operação: %.1f", mult));
+    }
 }

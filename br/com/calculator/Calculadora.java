@@ -36,6 +36,10 @@ public class Calculadora {
                 Operacoes operar1 = new Operacoes();
                 operar1.subtracao(numeroDeValoresConvertido,this);
                 break;
+            case 2:
+                Operacoes operar2 = new Operacoes();
+                operar2.multiplicacao(numeroDeValoresConvertido,this);
+                break;
         }
     }
 }
