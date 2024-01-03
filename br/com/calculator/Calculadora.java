@@ -9,8 +9,6 @@ public class Calculadora {
 
     void receberDados() {
         do {
-
-
         String numeroDeValores = JOptionPane.showInputDialog(null, "Com quantos numeros você deseja operar?");
         numeroDeValoresConvertido = Double.parseDouble(numeroDeValores);
         valores = new double[(int) numeroDeValoresConvertido];
@@ -33,20 +31,20 @@ public class Calculadora {
         switch (x) {
             case 0:
                 Operacoes operar = new Operacoes();
-                operar.adicao(numeroDeValoresConvertido, this);
+                operar.adicao(this);
                 break;
 
             case 1:
                 Operacoes operar1 = new Operacoes();
-                operar1.subtracao(numeroDeValoresConvertido, this);
+                operar1.subtracao( this);
                 break;
             case 2:
                 Operacoes operar2 = new Operacoes();
-                operar2.multiplicacao(numeroDeValoresConvertido, this);
+                operar2.multiplicacao( this);
                 break;
             case 3:
                 Operacoes operar3 = new Operacoes();
-                operar3.divisao(numeroDeValoresConvertido, this);
+                operar3.divisao(this);
                 break;
         }}while (continuar.equalsIgnoreCase("s")||continuar.equalsIgnoreCase("sim"));
     }
