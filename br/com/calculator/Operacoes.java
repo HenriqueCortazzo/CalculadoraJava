@@ -17,8 +17,9 @@ public class Operacoes {
         double sub = 0;
         int newA = (int) a;
         double[] valoresAOperar = calculadora.valores;
-        for (int i = 0; i < valoresAOperar.length - 1; i++) {
-            sub = valoresAOperar[i] - valoresAOperar[i + 1];
+        sub = valoresAOperar[0];
+        for (int i = 1; i < valoresAOperar.length; i++) {
+            sub -= valoresAOperar[i];
         }
         JOptionPane.showMessageDialog(null, String.format("Resultado da operação: %.1f", sub));
     }
