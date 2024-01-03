@@ -30,6 +30,12 @@ public class Calculadora {
             case 0:
                 Operacoes operar = new Operacoes();
                 operar.adicao(numeroDeValoresConvertido, this);
+                break;
+
+            case 1:
+                Operacoes operar1 = new Operacoes();
+                operar1.subtracao(numeroDeValoresConvertido,this);
+                break;
         }
     }
 }
