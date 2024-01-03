@@ -34,11 +34,15 @@ public class Calculadora {
 
             case 1:
                 Operacoes operar1 = new Operacoes();
-                operar1.subtracao(numeroDeValoresConvertido,this);
+                operar1.subtracao(numeroDeValoresConvertido, this);
                 break;
             case 2:
                 Operacoes operar2 = new Operacoes();
-                operar2.multiplicacao(numeroDeValoresConvertido,this);
+                operar2.multiplicacao(numeroDeValoresConvertido, this);
+                break;
+            case 3:
+                Operacoes operar3 = new Operacoes();
+                operar3.multiplicacao(numeroDeValoresConvertido, this);
                 break;
         }
     }

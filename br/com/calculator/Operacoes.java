@@ -33,4 +33,14 @@ public class Operacoes {
         }
         JOptionPane.showMessageDialog(null, String.format("Resultado da operação: %.1f", mult));
     }
+
+    void divisao(double a, Calculadora calculadora) {
+        double divisao = 1;
+        int newA = (int) a;
+        double[] valoresAOperar = calculadora.valores;
+        for (int i = 0; i < valoresAOperar.length; i++) {
+            divisao /= valoresAOperar[i];
+        }
+        JOptionPane.showMessageDialog(null, String.format("Resultado da operação: %.1f", divisao));
+    }
 }
